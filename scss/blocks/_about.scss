@@ -1,0 +1,135 @@
+.about {
+  max-width: 100%;
+  height: auto;
+  background: #1b262f;
+  background-image: url(/img/bck-img.png);
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + -600px) -300px;
+
+  &__container {
+    @include container;
+  }
+
+  &__box {
+    @extend %flex-sb;
+  }
+
+  &__info {
+    padding: 100px 0;
+    max-width: 445px;
+  }
+
+  &__title {
+    @include font-DM-serif-displey;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+  }
+
+  &__paragraf {
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+
+  &__link {
+    margin-top: 32px;
+  }
+
+  &__item:hover {
+    background: #ffffff;
+    color: #1b262f;
+    cursor: pointer;
+  }
+
+  &__logos {
+    max-width: 536px;
+    @extend %flex-sb;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+
+  &__item {
+    @include font-public-sans;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+    padding: 15px 32px;
+    border: 1px solid #fbfcfe;
+    border-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about {
+    &__box {
+      flex-direction: column-reverse;
+    }
+
+    &__logos {
+      margin-top: 80px;
+    }
+
+    &__info {
+      padding-top: 24px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .about {
+    background-position: calc(50% - 18px) -446px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about {
+    &__logos {
+      max-width: 327px;
+      gap: 24px;
+    }
+
+    &__info {
+      max-width: 327px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__paragraf {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .about {
+    background-position: calc(50% - 18px) -446px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about {
+    &__logos {
+      max-width: 280px;
+      gap: 55px;
+      margin-top: 60px;
+      flex-direction: column;
+    }
+
+    &__info {
+      max-width: 280px;
+    }
+  }
+}

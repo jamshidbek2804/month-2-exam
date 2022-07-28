@@ -1,0 +1,19 @@
+// $your-variable-name: example: red, 18px, italic, "Arial", 700;
+
+%flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin font-public-sans {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin font-DM-serif-displey {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: 400;
+}
